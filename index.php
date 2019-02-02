@@ -25,7 +25,7 @@ switch ($request_uri[0]) {
     // Everything else
     default:
         header('HTTP/1.0 404 Not Found');
-        //require '../views/404.php';
+      require __DIR__.'/template/404.html';
         break;
       }
  ?>
