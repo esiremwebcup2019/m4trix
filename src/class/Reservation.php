@@ -28,10 +28,10 @@ class Reservation
     /** @Column(type="string") **/
     protected $mail;
 
-    /** @Column(type="datetime") **/
+    /** @Column(type="string") **/
     protected $date_debut;
 
-    /** @Column(type="datetime") **/
+    /** @Column(type="string") **/
     protected $date_fin;
 
 
