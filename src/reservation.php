@@ -15,7 +15,21 @@ if($_SERVER['REQUEST_METHOD'] == 'GET'){
 	$myDB=new Db();
 	$db=$myDB->getBase();
 
+	 				$nom = $_POST['name'];
+                   $prenom = $_POST['surname'];
+                   $dateEvent = $_POST['date'];
+                   $demandeDpeciale = $_POST['specialDemande'];
+                   $invite = $_POST['invite'] ;
+                   $num_tel = $_POST['phone'];
+                   $email = $_POST['email'];
+                   $dateDebut =$_POST['dateFrom'];
+                   $dateFin =$_POST['dateFin'];
 
+
+
+                   
+
+/*
 	$fields = array(
 		array('name' => 'date-from', 'title' => 'From', 'valid' => array('require'), 'err_message' => ''),
 		array('name' => 'date-to', 'title' => 'To', 'valid' => array('require')),
@@ -72,6 +86,6 @@ if($_SERVER['REQUEST_METHOD'] == 'GET'){
 	}else{
 		echo json_encode(array('code' => 'failed', 'fields' => $error_fields));
 	}
-}
+}*/
 
 ?>
