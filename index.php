@@ -13,13 +13,13 @@ $tab_route = explode("/",$request_uri[0]);
 switch ($request_uri[0]) {
     // Home page
     case '/':
-        require __DIR__.'/template/index.html';
+        require __DIR__.'/src/home.php';
         //echo "1";
         break;
     // About page
-    case '/contact':
-        require __DIR__.'/template/contact.html';
-        
+    case '/reservation':
+        require __DIR__.'/src/reservation.php';
+
         break;
     // Everything else
     default:
